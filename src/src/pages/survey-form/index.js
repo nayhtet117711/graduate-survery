@@ -59,8 +59,16 @@ class App extends Component {
             return (
                 <div className="container-fluid h-100">
                     <div className="row justify-content-center h-100 align-items-center">
-                        <div className="col-lg-6 col-sm-12 text-center font-weight-bold">
-                            Thank you For your participation
+                        <div className="col-lg-6 col-sm-12 font-weight-bold">
+                            <div className="text-center">
+                                <strong>Thank you For your participation</strong>
+                            </div>
+                            <div className="p-4">
+                                <strong>Result</strong>
+                            </div>
+                            <div className="p-3 py-5border bg-light rounded">
+                                <small><pre>{JSON.stringify(questions, null, 2)}</pre></small>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -73,9 +81,7 @@ class App extends Component {
                     <div className="col-lg-6 col-sm-12">
                         { questionViews }
                     </div>
-                    {/* <div className="col-4 border bg-light rounded">
-                        <small><pre>{JSON.stringify(questions, null, 2)}</pre></small>
-                    </div> */}
+                    
                 </div>
             </div>
         )
