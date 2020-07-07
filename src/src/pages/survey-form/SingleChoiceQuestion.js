@@ -81,9 +81,9 @@ export default props => {
     else 
         return (
             <div className="p-2">
-                <div className="bg-light border p-4 rounded py-5">
+                <div className="border p-4 rounded py-5 questionBox">
                     {/* <small><pre>{JSON.stringify(question, null, 2)}</pre></small> */}
-                    <label className="form-check-label">{question.text}</label>
+                    <label className="form-check-label label">{question.text}</label>
                     <div className="flex flex-column px-4 py-2">
                         { choiceViews }
                     </div>

@@ -5,9 +5,144 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-size: 18px !important;
+  color: #434343 !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.headerView {
+  text-align: center;
+  color: #f5f5f5;
+  font-weight: 900;
+}
+
+.headerView .title {
+  top: -20px;
+  background: #9651db;
+  position: relative;
+}
+
+.shape {
+    display: block;
+    position: absolute;
+    left: -103% !important;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 300%;
+    height: 400px;
+}
+
+.shapeContainer {
+  /* overflow: hidden !important; */
+  position: relative;
+  /* height: 400px; */
+  padding: 0px;
+}
+
+.questionBox {
+  background: #fafafa77;
+}
+
+.questionBox .label {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.shape .c1 {
+    fill: #9651db; /*#57ae8c;*/
+}
+
+.trademark {
+    text-align: center;
+    color: #f5f5f5;
+} 
+
+.btn {
+    display: inline-flex;
+    letter-spacing: .08em;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    outline: 0;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 45px;
+    padding: 20px 40px;
+    text-decoration: none;
+    transition: all .1s ease-in-out;
+    background: #9651db;
+}
+
+.btn:hover {
+  background: #6825aa;
+}
+
+input[type=text].form-control {
+  padding: 24px !important;
+  border-radius: 45px;
+  background: unset;
+  font-size: 18px;
+  letter-spacing: .02em;
+}
+
+.navBar {
+  background: #9651db;
+  padding-right: 24% !important;
+  position: -webkit-sticky !important; /* Safari */
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 0.5px 5px 1.5px #00000011;
+}
+
+.navBar .item {
+  display: inline-flex;
+  letter-spacing: .08em;
+  font-weight: 500;
+  font-size: 18px;
+  color: #434343;
+  outline: 0;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 45px;
+  padding: 10px 30px;
+  text-decoration: none;
+  transition: all .1s ease-in-out;
+  background: #d5b1fa;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navBar .item:hover {
+  color: #f5f5f5;
+  background: #6825aa;
+  transition: all .1s ease-in-out;
+}
+
+.container-fluid {
+  padding: 0px !important;
+  margin: 0px !important
+}
+
+.image-container {
+  position: absolute;
+  left: 40px;
+  top: 300px;
+}
+
+.image-container .image-wrapper {
+  opacity: 0.6;
+}
+
+.form-check > input[type=radio]{
+  background-color: red !;
+} 

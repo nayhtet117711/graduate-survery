@@ -3,11 +3,11 @@ import constant from "./constant"
 export const surveyFormData = [
     {
         key: "name",
-        text: "Name",
+        text: "What's your name?",
         type: constant.TEXT_FIELD,
         answer: []
     },
-    /*{
+    {
         key: "gender",
         text: "Gender",
         type: constant.SINGLE_CHOICE,
@@ -48,7 +48,7 @@ export const surveyFormData = [
                 answer: []
             },
         ],
-    }, */
+    }, 
     {
         key: "currentlyUniversity",
         text: "Are you currently in the University/College?",

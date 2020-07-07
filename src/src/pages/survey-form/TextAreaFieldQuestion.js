@@ -9,10 +9,10 @@ export default props => {
 
     return (
         <div className="p-2">
-            <div className="bg-light border p-4 rounded py-5">
+            <div className="border p-4 rounded py-5 questionBox">
                 {/* <small><pre>{JSON.stringify(question, null, 2)}</pre></small> */}
                 <div className="form-group">
-                    <label htmlFor={question.key}>{ question.text }</label>
+                    <label className="label" htmlFor={question.key}>{ question.text }</label>
                     <textarea type="text" className="form-control" id={question.key} placeholder="Please enter text" onChange={onChange}  >
                         { question.answer[0] || "" }
                     </textarea>

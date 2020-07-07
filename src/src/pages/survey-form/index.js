@@ -55,6 +55,27 @@ class App extends Component {
             } else return null            
         })
 
+        const headerView = (
+            <div className="headerView">
+                <div className="navBar p-4">
+                    <a href="#" className="item">Survey Result</a>
+                    <a href="#" className="item">Survey Result</a>
+                </div>
+                <div className="pt-5 title">
+                    <h2>Graduated Student Survey</h2>
+                    <div className="trademark font-weight-light h5">
+                        University of Technology (Yatanarpon Cyber City)
+                    </div>
+                </div>
+                <div className="image-container">
+                    {/* <image src="https://static.neris-assets.com/images/homepage/community.svg" alt="image" /> */}
+                    <div class="image-wrapper">
+                        <img width="400" height="300" src="https://static.neris-assets.com/images/homepage/community.svg" />
+                    </div>
+                </div>
+            </div>
+        )
+
         if(currentIndex===questions.length) {
             return (
                 <div className="container-fluid h-100">
@@ -71,17 +92,25 @@ class App extends Component {
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             )
         }
 
         return (
-            <div className="container-fluid h-100">
-                <div className="row justify-content-center h-100 align-items-center">
+            <div className="container-fluid h-100" >
+                <div className="row shapeContainer">
+                    <div className="col">
+                        {headerView}
+                        <svg viewBox="0 0 600 105" preserveAspectRatio="none" className="shape">
+                            <polygon points="600 61.82 476.72 105 351 74.68 157 105 0 55.39 0 -87 600 -87 600 61.82" class="c1">
+                        </polygon></svg>
+                    </div>
+                </div>
+                <div className="row justify-content-center h-100 align-items-center bg-transparent" style={{ marginTop: -150 }}>
                     <div className="col-lg-6 col-sm-12">
                         { questionViews }
                     </div>
-                    
                 </div>
             </div>
         )

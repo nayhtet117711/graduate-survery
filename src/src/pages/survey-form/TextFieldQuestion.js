@@ -8,10 +8,10 @@ export default props => {
     }
     return (
         <div className="p-2">
-            <div className="bg-light border p-4 rounded py-5">
+            <div className="border p-4 rounded py-5 questionBox">
                 {/* <small><pre>{JSON.stringify(question, null, 2)}</pre></small> */}
                 <div className="form-group">
-                    <label htmlFor={question.key}>{ question.text }</label>
+                    <label className="label" htmlFor={question.key}>{ question.text }</label>
                     <input type="text" className="form-control" id={question.key} value={question.answer[0] || ""} onChange={onChange } placeholder="Please fill this field" />
                 </div>
                 <div className="d-flex justify-content-between py-4 px-1">
