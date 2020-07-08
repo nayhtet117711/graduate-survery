@@ -3,7 +3,8 @@ import {
 	BrowserRouter as Router,
 	Switch,
 	Route,
-	Link
+	Link,
+	withRouter
 } from "react-router-dom";
 
 import Home from "./src/pages/home"
@@ -20,6 +21,7 @@ class App extends Component {
 	}
 
 	render() {
+		console.log(window.location.pathname)
 		return (
 			<Router>
 				<div className="container-fluid-1 h-100" >
@@ -56,11 +58,7 @@ class App extends Component {
 										<span className="h2 text-white">&ldquo;</span>Shape and Bright Your Future at UTYCC<span className="h2 text-white">&rdquo;</span>
 									</p>
 								</div>
-								<div className="offset-lg-1 col-lg-5 col-md-12 home-banner-right">
-									{ window.location.pathname.trim()!=="/results" &&
-										<img className="img-fluid" src="https://colorlib.com/preview/theme/eclipse/img/header-img.png" alt="" />
-									}
-								</div>
+								<ImageContainer />
 							</div>
 						</div>
 					</section>
@@ -73,10 +71,10 @@ class App extends Component {
 						</Switch>
 					</section>
 
-					<footer class="footer-area section-gap">
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-6 col-md-10 single-footer-widget pt-4">
+					<footer className="footer-area section-gap">
+						<div className="container">
+							<div className="row">
+								<div className="col-lg-6 col-md-10 single-footer-widget pt-4">
 									<h4>Contact Us</h4>
 									<ul>
 										<li><a className="d-flex"><i className="fa fa-phone px-2 primary-text-color pt-1" /><p>+95-025178100, +95-025178200, +95-025178103</p></a></li>
@@ -86,10 +84,10 @@ class App extends Component {
 									</ul>
 								</div>
 							</div>
-							<div class="footer-bottom row align-items-center">
-								<div class="col-lg-6 col-md-12 footer-social justify-content-center">
-									<a href="https://www.utycc.edu.mm/"><i class="fa fa-globe" title="Official website"></i></a>
-									<a href="#"><i class="fa fa-facebook" title="Official facebook page"></i></a>
+							<div className="footer-bottom row align-items-center">
+								<div className="col-lg-6 col-md-12 footer-social justify-content-center">
+									<a href="https://www.utycc.edu.mm/"><i className="fa fa-globe" title="Official website"></i></a>
+									<a href="#"><i className="fa fa-facebook" title="Official facebook page"></i></a>
 								</div>
 							</div>
 						</div>
@@ -101,5 +99,17 @@ class App extends Component {
 	}
 
 }
+
+const ImageContainer = withRouter((props) => {
+	// console.log(props.location.pathname)
+	// console.log(props.location.pathname.trim() === "/")
+	return (
+		<div className="offset-lg-1 col-lg-5 col-md-12 home-banner-right">
+			{ props.location.pathname.trim() === "/" &&
+				<img style={{ display: props.location.pathname.trim() === "/" ? 'display' : 'none' }} className="img-fluid" src="https://colorlib.com/preview/theme/eclipse/img/header-img.png" alt="" />
+			}
+		</div>
+	)
+})
 
 export default App;

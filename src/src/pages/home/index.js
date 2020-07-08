@@ -18,13 +18,13 @@ class App extends Component {
 
     render() {
         return (
-            <section class="feature-area">
-                <div class="container-fluid">
-                    <div class="feature-inner row">
-                        <div class="col-lg-2 col-md-6">
-                            <div class="feature-item d-flex">
-                                <i class="ti-book"></i>
-                                <div class="ml-20">
+            <section className="feature-area">
+                <div className="container-fluid">
+                    <div className="feature-inner row">
+                        <div className="col-lg-2 col-md-6">
+                            <div className="feature-item d-flex">
+                                <i className="ti-book"></i>
+                                <div className="ml-20">
                                     <h4>Vision</h4>
                                     <p>
                                         To be a Globally Remarkable Research based University and Cyber University
@@ -32,10 +32,10 @@ class App extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="feature-item d-flex">
-                                <i class="ti-cup"></i>
-                                <div class="ml-20">
+                        <div className="col-lg-3 col-md-6">
+                            <div className="feature-item d-flex">
+                                <i className="ti-cup"></i>
+                                <div className="ml-20">
                                     <h4>Mission</h4>
                                     <p>
                                         To provide skillful engineers and outstanding researchers
@@ -45,10 +45,10 @@ class App extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-6">
-                            <div class="feature-item d-flex border-right-0">
-                                <i class="ti-desktop"></i>
-                                <div class="ml-20">
+                        <div className="col-lg-2 col-md-6">
+                            <div className="feature-item d-flex border-right-0">
+                                <i className="ti-desktop"></i>
+                                <div className="ml-20">
                                     <h4>Motto</h4>
                                     <p>
                                         "Shape and Bright Your Future at UTYCC"
