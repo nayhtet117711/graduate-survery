@@ -63,11 +63,12 @@ const Pie = ({ /* see data tab */ }) => (
             {
                 anchor: 'left',
                 direction: 'column',
-                translateY: 56,
+                translateY: 100,
+                translateX: -50,
                 itemWidth: 100,
                 itemHeight: 24,
                 itemTextColor: '#999',
-                symbolSize: 18,
+                symbolSize: 16,
                 symbolShape: 'circle',
                 effects: [
                     {

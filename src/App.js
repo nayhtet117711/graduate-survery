@@ -57,7 +57,7 @@ class App extends Component {
 									</p>
 								</div>
 								<div className="offset-lg-1 col-lg-5 col-md-12 home-banner-right">
-									{ window.location.pathname!=="/results" &&
+									{ window.location.pathname.trim()!=="/results" &&
 										<img className="img-fluid" src="https://colorlib.com/preview/theme/eclipse/img/header-img.png" alt="" />
 									}
 								</div>

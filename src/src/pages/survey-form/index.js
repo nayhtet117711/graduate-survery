@@ -91,7 +91,7 @@ class App extends Component {
         }
 
         return (
-            <div className="row justify-content-center h-100 " style={{ marginTop: -300 }}>
+            <div className="row justify-content-center h-100 " style={{ marginTop: "-10em" }}>
                 <div className="col-lg-6 col-sm-12">
                     <div className="mx-2 px-3 rounded questionBoxTop d-flex">
                         <div className="text-white px-2 d-flex align-items-center font-weight-bold">{Math.floor((currentIndex) / (questions.length) * 100)}%</div>
