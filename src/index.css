@@ -49,7 +49,13 @@ code {
 }
 
 .questionBox {
-  background: #fafafa99;
+  background: #fafafae5;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.questionBoxTop {
+  background: #6825aa88;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
 .questionBox .label {
@@ -79,18 +85,25 @@ code {
     border-radius: 45px;
     padding: 18px 40px;
     text-decoration: none;
-    transition: all .1s ease-in-out;
+    /* transition: all .1s ease-in-out; */
     background: #9651db;
+    transition: 0.0s !important;
 }
 
 .btn:hover {
-  background: #6825aa;
+  /* background: #7c32ff; */
+  background: -webkit-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
+  background: -moz-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
+  background: -o-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%);
+  background: -ms-linear-gradient(90deg, #7c32ff 0%, #c738d8 100%); 
+  background: linear-gradient(90deg, #7c32ff 0%, #c738d8 100%); 
+  box-shadow: 0px 5px 8px rgba(108, 39, 255, 0.3);
 }
 
 input[type=text].form-control {
   padding: 18px !important;
   border-radius: 45px;
-  background: unset;
+  /* background: unset; */
   font-size: 18px;
   letter-spacing: .02em;
 }
@@ -162,10 +175,5 @@ input[type=text].form-control {
   color: #b372f5;
 }
 
-/* HOME page */
-/* .home-banner-area {
-    background: url(https://colorlib.com/preview/theme/eclipse/img/home-banner-bg.png) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    max-height: 1200px;
-} */
+/* Range Slider */
+
