@@ -58,7 +58,7 @@ class App extends Component {
                         </div>
                     </div>
                     <div className="pt-5 row justify-content-center">
-                        <div className="col-md-12 col-lg-8 justify-content-center align-items-center">
+                        <div className="col-md-12 col-lg-8 justify-content-center align-items-center p-4">
                             <Link to="/survey" className="btn btn-primary">Take Survey</Link>
                         </div>
                     </div>
