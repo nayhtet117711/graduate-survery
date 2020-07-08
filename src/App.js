@@ -23,7 +23,7 @@ class App extends Component {
 	render() {
 		console.log(window.location.pathname)
 		return (
-			<Router>
+			<Router forceRefresh>
 				<div className="container-fluid-1 h-100" >
 					<header className="default-header">
 						<nav className="navbar navbar-expand-lg  navbar-light">

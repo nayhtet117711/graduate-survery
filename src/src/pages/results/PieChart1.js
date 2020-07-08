@@ -9,7 +9,7 @@ const Pie = ({ /* see data tab */ }) => (
         innerRadius={0.5}
         padAngle={0.7}
         cornerRadius={3}
-        colors={{ scheme: 'category10' }}
+        colors={{ scheme: "set2" /*'purpleRed_green'*/ }}
         borderWidth={1}
         borderColor={{ from: 'color', modifiers: [['darker', 0.2]] }}
         radialLabelsSkipAngle={10}
@@ -63,8 +63,8 @@ const Pie = ({ /* see data tab */ }) => (
             {
                 anchor: 'left',
                 direction: 'column',
-                translateY: 100,
-                translateX: -50,
+                translateY: 110,
+                translateX: -60,
                 itemWidth: 100,
                 itemHeight: 24,
                 itemTextColor: '#555',
@@ -85,15 +85,27 @@ const Pie = ({ /* see data tab */ }) => (
 
 const data = [
     {
-        "id": "Male",
-        "label": "Male",
-        "value": 84,
+        "id": "Company",
+        "label": "Company",
+        "value": 65,
+        "color": "hsl(210, 70%, 50%)"
+    },
+    {
+        "id": "Own business",
+        "label": "Own Business",
+        "value": 10,
+        "color": "hsl(210, 70%, 50%)"
+    },
+    {
+        "id": "Government staff",
+        "label": "Government Staff",
+        "value": 15,
         "color": "hsl(160, 70%, 50%)"
     },
     {
-        "id": "Female",
-        "label": "Female",
-        "value": 16,
+        "id": "Other",
+        "label": "Other",
+        "value": 10,
         "color": "hsl(210, 70%, 50%)"
     },
 ]
